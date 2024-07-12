@@ -9,6 +9,16 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+
+  display: grid;
+  gap: 15px;
+  grid-template-columns: calc(25vw - 27.5px) calc(75vw - 27.5px);
+  grid-template-rows: calc(12.5vh - 27.5px) calc(12.5vh - 25px) calc(62.5vh - 25px) calc(12.5vh - 27.5px);
+
+  /* display: grid;
+    gap: 15px;
+    grid-template-columns: calc(25vw - 30px) calc(75vw - 30px);
+    grid-template-rows: 12.5vh 12.5vh 62.5vh 12.5vh; */
 }
 
 .container div {
@@ -22,10 +32,14 @@ html {
 
 .header {
   background-color: #006157;
+
+  grid-column: 1/-1;
 }
 
 .sidebar {
   background-color: #005B94;
+
+  grid-row: 2/-2;
 }
 
 .nav {
@@ -38,6 +52,8 @@ html {
 
 .footer {
   background-color: #393f4d;
+
+  grid-column: 1/-1;
 }
 
 .article p {
