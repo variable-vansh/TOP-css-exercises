@@ -59,5 +59,21 @@ button {
 }
 
 .backdrop.show {
-  opacity: 30%;
+  opacity: 50%;
 }
+
+/* ---------------------------------------------------------- */
+
+/* mah-life mah rullzzz */
+.popup-modal {
+  transform: translate(-50%, 200%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+}
+
+
+.popup-modal.show {
+  transform: translate(-50%, -71%);
+}
+
+
+

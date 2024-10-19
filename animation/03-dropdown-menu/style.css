@@ -29,4 +29,26 @@ ul.dropdown-menu li:hover {
   display: block;
 }
 
+/* ---------------------------------------------------------- */
+
+ /* Create the animation... */
+ @keyframes slide-down {
+  from {
+    transform: scaleY(0%);
+  }
+
+  80%{
+    transform: scaleY(110%);
+  }
+
+  to {
+    transform: scaleY(100%);
+  }
+}
+
+/* ...and then apply it: */
+.visible {
+  animation: slide-down 1000ms;
+  transform-origin: top;
+}
 
